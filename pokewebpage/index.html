@@ -24,11 +24,25 @@
 	<p>This website will analyze the 6 Pokemon ID numbers you select and show you what the team's stats will look like on another page using info from PokeAPI.</p>
 	
 	<h2>Please Format your request like so: ID#, ID#, ID#, ID#, ID#, ID#</h2>
-	<form action="pokemon_display.html">
+	<!-- <form action="pokemon_display.html">
     	<input type="text" id="pokemon-ids" name="pokemon-ids" required>
    	<br>
    	<input type="submit" value="Submit">
-  	</form>
+  	</form> -->
+	<script>
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', (event) => {
+    const ids = document.getElementById('pokemon-ids').value;
+    const idArray = ids.split(',');
+
+    // Basic validation (can be more robust)
+    if (idArray.length !== 6) {
+      alert('Please enter exactly 6 IDs.');
+      event.preventDefault();
+    }
+  });
+</script>
 	
 	<p>Below, I have given a list of the Pokemon ID numbers; please input 6 of them to continue.</p> 
 	<p>If you want to find your Pokemon fast, use CTRL + F to search the webpage for key terms.</p>
