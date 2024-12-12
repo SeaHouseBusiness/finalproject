@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Pokemon Look Up</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+    <title>Pokemon Look Up</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="wrapper">
@@ -11,24 +11,20 @@
 </script> 
 <![endif]-->
 <header>
-	
-	<h1><img align="left" src="images/wikilogo.png" height="128" width="200" alt="JavaJam Coffee Joint Logo" id="logo"> Pokemon Look Up</h1>
-	
+    <h1><img align="left" src="images/wikilogo.png" height="128" width="200" alt="JavaJam Coffee Joint Logo" id="logo"> Pokemon Look Up</h1>
 </header>
 <nav>
-<ul>
-	<li><a href="index.html">Main</a></li>
-</ul>
+    <ul>
+        <li><a href="index.html">Main</a></li>
+    </ul>
 </nav>
 <main>
-	<p>This website will analyze the 6 Pokemon ID numbers you select and show you what the team's stats will look like on another page using info from PokeAPI.</p>
-	
-	<h2>Please Format your request like so: ID#, ID#, ID#, ID#, ID#, ID#</h2>
-  	<form action="pokemon_display.html">
-   	<input type="text" id="pokemon-ids" name="pokemon-ids" required>
-   	<be>
-    	<input type="submit" value="Submit">
- 	</form>
+    <p>This website will analyze the 6 Pokemon ID numbers you select and show you what the team's stats will look like on another page using info from PokeAPI.</p>
+    <h2>Please Format your request like so: ID#, ID#, ID#, ID#, ID#, ID#</h2>
+    <form action="pokemon_display.html" method="GET">
+        <input type="text" id="pokemon-ids" name="pokemon-ids" required>
+        <input type="submit" value="Submit">
+    </form>
 	
 	<p>Below, I have given a list of the Pokemon ID numbers; please input 6 of them to continue.</p> 
 	<p>If you want to find your Pokemon fast, use CTRL + F to search the webpage for key terms.</p>
